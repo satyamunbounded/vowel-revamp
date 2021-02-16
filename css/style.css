@@ -77,7 +77,8 @@ hr {
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
   height: 0;
-  overflow: visible; }
+  overflow: visible;
+}
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
@@ -8779,6 +8780,72 @@ aside.aside{
   color: rgb(51, 48, 48);
   font-weight: 550;
 }
+/* section4 */
+.theme{
+  background-color: #096b49;
+}
+.theme h1{
+  color: white;
+  font-weight: 700;
+  padding-top: 0;
+  font-size: 4rem;
+}
+.theme h2{
+  color: white;
+  font-weight: 500;
+}
+.theme hr{
+  color: white;
+  background-color: white;
+}
+.theme img{
+  margin-bottom: 2rem;
+}
+.services-center{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem,1fr));
+  gap: 2.5rem;
+}
+.service{
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+.sharing-heading{
+  display: grid;
+  place-content: center;
+  text-align: center;
+  padding: 4rem;
+}
+.sharing-heading h1{
+  font-size: 4rem;
+  font-weight: 600;
+}
+section.sharing p{
+  color: rgb(29, 28, 28);
+  font-size: inherit;
+  padding: 1rem;
+}
+section.sharing h4{
+  color: black;
+  font-weight: 600;
+}
+
+section.great-teams{
+  height: auto;
+}
+.teams-image-parent{
+  display: grid;
+  place-content: center;
+}
+.teams-image{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 4.5rem;
+  align-items: center;
+  margin-bottom: 4rem;
+  
+}
 
 .bg-light {
   background: #f8f9fd !important; }
@@ -9216,9 +9283,16 @@ textarea.form-control {
   text-transform: uppercase;
   letter-spacing: 2px; }
 
+  .heading-section p{
+    font-size: 22px;
+    font-weight: 500;
+    padding: 2rem;
+    color: rgb(27, 27, 27);
+  }
 .heading-section h2 {
   font-size: 50px;
-  font-weight: 800; }
+  font-weight: 800;
+color: black; }
   @media (max-width: 767.98px) {
     .heading-section h2 {
       font-size: 28px; } }
@@ -9926,6 +10000,16 @@ textarea.form-control {
     height:85%;
     width:90%;
     border-radius: 1rem;  
+}
+
+/* toggle arrow */
+.arrow_toggle{
+  display: grid;
+  place-content: center;
+}
+.toggle1, .toggle2{
+  font-size: 1rem;
+  color: gray;
 }
 
 @media (max-width: 768px){
