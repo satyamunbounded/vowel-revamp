@@ -8634,13 +8634,13 @@ h1, h2, h3, h4, h5,
     display: inline-block; } */
 section.section1{
   height: auto;
-  width: 60%;
+  width: 70%;
   display: grid;
   place-content: center;
   text-align: center;
   padding-top: 22px!important;
     padding-bottom: 22px!important;
-    margin: 3rem;
+    margin: 2rem;
     margin-left: auto!important;
     margin-right: auto!important;
     /* vertical-align: baseline; */
@@ -8899,6 +8899,62 @@ section.great-teams{
 @media (max-width: 480px){
   .great-team img{
     height: 1.2rem;
+  }
+}
+/* blog page */
+.blog-heading{
+  text-align: start;
+  font-size: 4.5rem ;
+  font-weight: 500;
+  color: black;
+}
+.blog-para{
+  font-size: 2.2rem;
+  text-align: center;
+  width: 82%;
+}
+.try-vowel{
+  color:white; 
+  font-size: 70px; 
+  font-weight: 700;
+}
+@media (max-width: 860px){
+  .blog-heading{
+    font-size: 3.4rem;
+    line-height: 3.8rem;
+    padding: 2rem;
+    padding-left: 0rem;
+  }
+  .blog-para{
+    font-size: 1.6rem;
+    text-align: left;
+  }
+}
+@media (max-width: 670px){
+  .blog-logo{
+    margin-left: 2rem;
+  }
+  .blog-heading{
+    margin-left: 2rem;
+  }
+  .blog-para{
+    margin-left: 2rem;
+  }
+  .try-vowel{
+    font-size: 50px; 
+    font-weight: 600;
+  }
+}
+@media (max-width: 490px){
+  .blog-heading{
+    line-height: 2.5rem;
+  }
+  .blog-para{
+    font-size: 1.1rem;
+  }
+  .try-vowel{
+    font-size: 36px; 
+    font-weight: 500;
   }
 }
 
