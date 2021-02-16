@@ -8664,15 +8664,13 @@ section.section1 h6 a{
   font-weight: bold;
 }
 @media only screen and (max-width: 668px) {
+  section.section1{
+    width: 100%;
+  }
   section.section1 h1 {
-    margin: 1rem;
-    padding: 1rem;
     font-size: 2.5rem;
-    margin: 1rem 1rem;
   }
   section.section1 p{
-    margin: 1rem;
-    padding: 1rem;
     font-size: 1.1rem;
   }
   form.waitlistForm{
@@ -8782,7 +8780,7 @@ aside.aside{
 }
 /* section4 */
 .theme{
-  background-color: #096b49;
+  background-color: #1c7430
 }
 .theme h1{
   color: white;
@@ -8856,7 +8854,7 @@ section.sharing h4{
 }
 
 section.great-teams{
-  height: auto;
+  height: auto; 
 }
 .teams-image-parent{
   display: grid;
@@ -8868,8 +8866,42 @@ section.great-teams{
   grid-gap: 4.5rem;
   align-items: center;
   margin-bottom: 4rem;
-  
 }
+@media (max-width: 768px){
+  .teams-image{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 1rem;
+  }
+  .teams-image img{
+    height: 5rem;
+  }
+}
+@media (max-width: 480px){
+  .teams-image img{
+    height: 3rem;
+  }
+  .sharing-heading h1{
+    font-size: 3rem;
+    font-weight: 500;
+  }
+}
+@media (max-width: 768px){
+  .great-team img{
+    height: 2.5rem;
+  }
+}
+@media (max-width: 580px){
+  .great-team img{
+    height: 2rem;
+  }
+}
+@media (max-width: 480px){
+  .great-team img{
+    height: 1.2rem;
+  }
+}
+
 
 .bg-light {
   background: #f8f9fd !important; }
@@ -9105,7 +9137,9 @@ textarea.form-control {
  }
   @media (max-width: 767.98px) {
     .ftco-section {
-      padding: 6em 0; } }
+      padding: 6em 0; } 
+    }
+
 
 .ftco-bg-dark {
   background: #3c312e; }
@@ -9468,7 +9502,7 @@ color: black; }
 
 .ftco-faqs .img-faqs {
   position: relative;
-  height: 700px;
+  height: auto;
   z-index: 0; }
 
 .ftco-faqs .img {
@@ -10127,3 +10161,13 @@ color: black; }
     font-size: 14px;
   }
 }
+
+@media only screen and (max-width: 568px){
+  .ftco-section p{
+    font-size: 16px;
+    padding: 0;
+  }
+}
+
+
+
