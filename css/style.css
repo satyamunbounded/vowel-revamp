@@ -58,10 +58,13 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
-  display: block; }
+  display: block;
+height: auto;
+width: auto; }
 
 body {
   margin: 0;
+  /* width: 100%; */
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1rem;
   font-weight: 400;
@@ -5327,9 +5330,9 @@ button.bg-danger:hover,
 button.bg-danger:focus {
   background-color: #bd2130 !important; }
 
-.bg-light {
+/* .bg-light {
   background-color: #f8f9fa !important;
-}
+} */
 
 a.bg-light:hover, a.bg-light:focus,
 button.bg-light:hover,
@@ -8830,7 +8833,7 @@ aside.aside{
 }
 .service{
   color: white;
-  padding: 2rem;
+  padding: 1.2rem;
   text-align: center;
 }
 .sharing-heading{
@@ -8918,6 +8921,8 @@ section.great-teams{
   font-size: 70px; 
   font-weight: 700;
 }
+
+
 @media (max-width: 860px){
   .blog-heading{
     font-size: 3.4rem;
@@ -8930,6 +8935,7 @@ section.great-teams{
     text-align: left;
   }
 }
+
 @media (max-width: 670px){
   .blog-logo{
     margin-left: 2rem;
@@ -8957,10 +8963,91 @@ section.great-teams{
     font-weight: 500;
   }
 }
+/* product management */
+.product-management{
+  height: auto;
+  width: auto;
+  padding: 4rem;
+  background-color: #fff4d6;
+  padding-bottom: 0px;
+  padding-right: 0px;
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+.product-img img{
+  height: 100vh;
+  width: auto;
+  object-fit: cover;
+  float: right;
+}
+.product-management h1{
+  font-weight: 500; 
+  font-size: 3.8rem;
+  line-height: 5rem;
+  color: black;
+}
+.product-management h4{
+  width: 70%; 
+  padding: 1.5rem;
+  margin: 0px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: black;
+}
 
-
-.bg-light {
-  background: #f8f9fd !important; }
+.case-content-section{
+  background-color: rgb(230, 230, 230);
+  padding: 5rem;
+}
+.case-content{
+  height: auto;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 5rem;
+  margin: 4rem;
+}
+.case-content-divs{
+  padding: 2rem;
+  border-radius: 4rem;
+  background-color: white;
+  border: 1px solid rgb(173, 173, 173);
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: auto;
+}
+.case-content-img{
+  display: grid;
+  place-content: center;
+}
+@media (max-width: 880px){
+  .case-content{
+    display: grid;
+    grid-template-columns: auto;
+    margin: 2rem;
+    width: 90%;
+    height: auto;
+  }
+  .case-content-divs h2{
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 450px){
+  .case-content-divs h2{
+    font-size: 1.2rem;
+  }
+  .case-content-section{
+   padding: 1rem;
+  }
+  .case-content-img img{
+    height: 100px;
+  }
+  .product-picture img{
+    height: 300px;
+  }
+}
+/* .bg-light {
+  background: #f8f9fd !important; } */
 
 .bg-secondary {
   background: #8fd0d2 !important; }
@@ -10200,9 +10287,6 @@ color: black; }
   .right p{
     font-size: 16px;
   }
-  /* .left-img{
-    margin-top: 6rem;
-  } */
 }
 
 @media only screen and (max-width: 768px){
@@ -10224,6 +10308,85 @@ color: black; }
     padding: 0;
   }
 }
+@media (max-width: 860px){
+  .product-management h1{
+    font-weight: 500; 
+    line-height: 4rem;
+    font-size: 3.5rem;
+  }
+  .product-management h4{
+    font-size: 1.2rem;
+    width: 100%;
+  }
+  .product-management{
+    display: grid;
+    grid-template-columns: 90%;
+    height: 150vh;
+  }
+  .product-img{
+    height: 50%;
+    float: left;
+  }
+  .product-img img{
+    height: 100%;
+    float: left;
+  }
+}
+@media (max-width: 780px){
+  .product-management h1{
+    font-weight: 500; 
+    line-height: 3.5rem;
+    font-size: 3rem;
+  }
+  .product-management h4{
+    font-size: 1rem;
+    width: 100%;
+  }
+  .product-img{
+    height: 40%;
+    
+}
+}
+@media (max-width: 560px){
+  .product-img{
+    height: 25%;
+  }
+  .product-management{
+    padding-right: 0px;
+    padding-left: 1rem;
+  }
+}
+@media (max-width: 440px){
+  .product-management{
+    height: 170vh;
+  }
+}
 
+/* media-kit */
+.media-kit{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+/* .media1{
+  background-color: blue;
+} */
+.media2{
+  /* background-color: red; */
+  display: grid;
+  place-content: center;
+  width: 100%;
+}
+.media2 a{
+  font-size: 1.2rem;
+}
 
-
+@media (max-width:998px){
+  .media2{
+    width: 100%;
+    padding: 2rem;
+  }
+  .media-kit{
+    display: grid;
+    grid-template-columns: auto;
+  }
+}
